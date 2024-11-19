@@ -4,7 +4,7 @@
  */
 import {onMounted, ref} from "vue";
 import Card from "./Card.vue";
-import {cards} from "../assets/data/cards.ts";
+import {cards, ICard} from "../assets/data/cards.ts";
 import Button from "./Button.vue";
 // #region Imports
 // Types  
@@ -25,7 +25,7 @@ import Button from "./Button.vue";
 
 // #region Data
 let isGameStart = ref<boolean>(false);
-let shuffleCards = ref<Array>([]);
+let shuffleCards = ref<ICard[]>([]);
 // #endregion  
 
 // #region Methods

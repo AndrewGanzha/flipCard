@@ -1,4 +1,9 @@
-export const cards = [
+export interface ICard {
+    value: string,
+    icon: string,
+}
+
+export const cards: ICard[] = [
     {
         value: 'apple',
         icon:   '🍏'
